@@ -1,4 +1,4 @@
 package za.ac.cput.repository.implimentation;
 
-public class RoleRespositoryImpl {
+public class ItemRespositoryImpl {
 }

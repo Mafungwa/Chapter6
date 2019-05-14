@@ -1,4 +1,4 @@
 package za.ac.cput.repository;
 
-public interface Order_Item {
+public interface ItemRepository {
 }

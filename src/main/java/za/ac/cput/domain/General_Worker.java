@@ -2,15 +2,15 @@ package za.ac.cput.domain;
 
 import java.util.Objects;
 
-public class Manager {
+public class General_Worker {
 
     private String empNum;
 
 
-    private Manager() {
+    private General_Worker() {
     }
 
-    private Manager(Builder builder) {
+    private General_Worker(Builder builder) {
         this.empNum = builder.empNum;
     }
 
@@ -26,20 +26,20 @@ public class Manager {
             return this;
         }
 
-        public Builder copy(Manager manager) {
-            this.empNum = manager.empNum;
+        public Builder copy(General_Worker general_worker) {
+            this.empNum = general_worker.empNum;
             return this;
         }
 
-        public Manager build() {
-            return new Manager(this);
+        public General_Worker build() {
+            return new General_Worker(this);
         }
     }
 
 
     @Override
     public String toString() {
-        return "Manager{" +
+        return "General_Worker{" +
                 "empNum='" + empNum + '\'' +
                 '}';
     }
@@ -48,8 +48,8 @@ public class Manager {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Manager manager = (Manager) o;
-        return empNum.equals(manager.empNum);
+        General_Worker general_worker = (General_Worker) o;
+        return empNum.equals(general_worker.empNum);
     }
 
     @Override

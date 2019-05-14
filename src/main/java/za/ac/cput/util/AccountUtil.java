@@ -1,4 +1,4 @@
 package za.ac.cput.util;
 
-public class Order_State {
+public class AccountUtil {
 }

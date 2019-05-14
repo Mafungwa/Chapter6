@@ -1,4 +1,4 @@
 package za.ac.cput.repository.implimentation;
 
-public class Order_ItemRespositoryImpl {
+public class General_WorkerImpl {
 }
