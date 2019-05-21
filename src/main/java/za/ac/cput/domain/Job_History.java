@@ -1,12 +1,17 @@
 package za.ac.cput.domain;
 
+import java.util.Date;
 import java.util.Objects;
+
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
 
 public class Job_History {
 
     private String empId;
-    private int startDate;
-    private String endDate;
+    private Date startDate;
+    private Date endDate;
     private String departmentId;
 
     public Job_History() {
@@ -23,11 +28,11 @@ public class Job_History {
         return empId;
     }
 
-    public int getStartDate() {
+    public Date getStartDate() {
         return startDate;
     }
 
-    public String getEndDate() {
+    public Date getEndDate() {
         return endDate;
     }
 
@@ -37,8 +42,8 @@ public class Job_History {
 
     public static class Builder{
         private String empId;
-        private int startDate;
-        private String endDate;
+        private Date startDate;
+        private Date endDate;
         private String departmentId;
 
         public Builder EmpId(String empId) {
@@ -46,12 +51,12 @@ public class Job_History {
             return  this;
         }
 
-        public  Builder StartDate(int startDate) {
+        public  Builder StartDate(Date startDate) {
             this.startDate = startDate;
             return this;
         }
 
-        public Builder EndDate(String endDate) {
+        public Builder EndDate(Date endDate) {
             this.endDate = endDate;
             return this;
         }

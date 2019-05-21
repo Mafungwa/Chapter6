@@ -2,7 +2,11 @@ package za.ac.cput.domain;
 
 import java.util.Objects;
 
-public class WireTransfer {
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
+public class WireTransfer extends Payment{
 
     private String bankId,bankName;
 

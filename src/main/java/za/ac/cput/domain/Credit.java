@@ -3,7 +3,11 @@ package za.ac.cput.domain;
 import java.util.Date;
 import java.util.Objects;
 
-public class Credit {
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
+public class Credit extends Payment{
 
     private String number;
     private String type;

@@ -2,6 +2,10 @@ package za.ac.cput.domain;
 
 import java.util.Objects;
 
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
 public class Employee {
 
     private int id;
@@ -13,7 +17,7 @@ public class Employee {
     private String address;
     private String email;
 
-    private Employee() {
+    public Employee() {
     }
 
     private Employee(Builder builder) {

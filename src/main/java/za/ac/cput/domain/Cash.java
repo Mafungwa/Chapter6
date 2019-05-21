@@ -2,7 +2,11 @@ package za.ac.cput.domain;
 
 import java.util.Objects;
 
-public class Cash {
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
+public class Cash extends Payment{
 
     private Double cashTendered;
 

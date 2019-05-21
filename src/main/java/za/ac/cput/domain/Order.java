@@ -3,6 +3,10 @@ package za.ac.cput.domain;
 import java.util.Date;
 import java.util.Objects;
 
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
 public class Order {
 
 private Date createDate;

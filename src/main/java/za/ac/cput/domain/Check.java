@@ -2,7 +2,11 @@ package za.ac.cput.domain;
 
 import java.util.Objects;
 
-public class Check {
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
+public class Check extends Payment{
 
     private String name;
     private String bankId;

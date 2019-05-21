@@ -2,7 +2,11 @@ package za.ac.cput.domain;
 
 import java.util.Objects;
 
-public class Manager {
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
+public class Manager extends Employee{
 
     private String empNum;
 

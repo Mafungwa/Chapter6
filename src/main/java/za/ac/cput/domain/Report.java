@@ -2,6 +2,10 @@ package za.ac.cput.domain;
 
 import java.util.Objects;
 
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
 public class Report {
     private String type,filepath;
 

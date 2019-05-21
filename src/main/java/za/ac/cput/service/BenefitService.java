@@ -1,4 +1,10 @@
 package za.ac.cput.service;
 
-public class BenefitService {
+import za.ac.cput.domain.Benefit;
+import za.ac.cput.service.IService;
+
+import java.util.Set;
+
+public interface BenefitService extends IService<Benefit,String>{
+    Set<Benefit> getAll();
 }

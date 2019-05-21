@@ -2,18 +2,22 @@ package za.ac.cput.domain;
 
 import java.util.Objects;
 
-public class Admin {
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
+public class Admin extends Employee{
     private String empNum;
     private String qualification;
-    private String name;
+    //private String name;
 
-    private Admin() {
-    }
+    /*private Admin() {
+    }*/
 
     private Admin(Builder builder) {
         this.empNum = builder.empNum;
         this.qualification = builder.qualification;
-        this.name = builder.name;
+        //this.name = builder.name;
     }
 
     public String getEmpNum() {
@@ -23,15 +27,15 @@ public class Admin {
     public String getQualification() {
         return qualification;
     }
-    public String getName() {
+    /*public String getName() {
         return name;
-    }
+    }*/
 
 
     public static class Builder {
         private String empNum;
         private String qualification;
-        private String name;
+        //private String name;
 
         public Builder empNum(String empNum) {
             this.empNum = empNum;
@@ -42,15 +46,15 @@ public class Admin {
             this.qualification = qualification;
             return this;
         }
-        public Builder name(String name) {
+       /* public Builder name(String name) {
             this.name = name;
             return this;
-        }
+        }*/
 
         public Builder copy(Admin admin) {
             this.empNum = admin.empNum;
             this.qualification = admin.qualification;
-            this.name = admin.name;
+            //this.name = admin.name;
             return this;
         }
 
@@ -65,7 +69,7 @@ public class Admin {
         return "Admin{" +
                 "empNum='" + empNum + '\'' +
                 ", qualification='" + qualification + '\'' +
-                ", name='" + name + '\'' +
+               /* ", name='" + name + '\'' + */
                 '}';
     }
 

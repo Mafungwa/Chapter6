@@ -1,6 +1,11 @@
 package za.ac.cput.service;
 
 
-public class WorkService {
+import za.ac.cput.domain.Work;
+import za.ac.cput.service.IService;
 
+import java.util.Set;
+
+public interface WorkService extends IService<Work,String>{
+    Set<Work> getAll();
 }

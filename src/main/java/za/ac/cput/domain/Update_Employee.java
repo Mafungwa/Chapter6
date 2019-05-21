@@ -2,6 +2,10 @@ package za.ac.cput.domain;
 
 import java.util.Objects;
 
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
 public class Update_Employee {
     private String empId;
     private String name;

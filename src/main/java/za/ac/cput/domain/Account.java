@@ -1,10 +1,10 @@
 package za.ac.cput.domain;
-/*
-import  org.springframework.boot.autoconfigure.domain.EntityScan;
-*/
+
 import java.util.Objects;
 
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
 
+@EntityScan
 public class Account {
     private String empId,username,password,role;
 

@@ -2,7 +2,11 @@ package za.ac.cput.domain;
 
 import java.util.Objects;
 
-public class General_Worker {
+import  org.springframework.boot.autoconfigure.domain.EntityScan;
+
+@EntityScan
+
+public class General_Worker extends Employee{
 
     private String empNum;
 
